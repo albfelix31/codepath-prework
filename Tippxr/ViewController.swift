@@ -75,20 +75,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func slideUp(_ sender: Any) {
-        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [], animations: { () -> Void in self.popUp.alpha = 1 }, completion: nil)
+        UIView.animate(withDuration: 0.4, delay: 0.25, usingSpringWithDamping: 1.0, initialSpringVelocity: 4, options: [], animations: { () -> Void in self.popUp.alpha = 1 }, completion: nil)
             
         //popUp.alpha = 1
-        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [], animations: { () -> Void in self.downBar.alpha = 0 }, completion: nil)
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 4, options: [], animations: { () -> Void in self.downBar.alpha = 0 }, completion: nil)
     }
     
     @IBAction func slideDown(_ sender: Any) {
-        popUp.alpha = 0
-        downBar.alpha = 1
         
-        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [], animations: { () -> Void in self.popUp.alpha = 0 }, completion: nil)
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 4, options: [], animations: { () -> Void in self.popUp.alpha = 0 }, completion: nil)
         
         //popUp.alpha = 1
-        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [], animations: { () -> Void in self.downBar.alpha = 1 }, completion: nil)
+        UIView.animate(withDuration: 0.4, delay: 0.25, usingSpringWithDamping: 1.0, initialSpringVelocity: 4, options: [], animations: { () -> Void in self.downBar.alpha = 1 }, completion: nil)
     }
     
 }

@@ -27,13 +27,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/PVLExDJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/vDP9X5V.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-My biggest challenge was setting up the settings page for default values for the tip calculator. The instructions were not entirely clear on how to do this as the walkhrough video was. However, I was able to get it right by watching a couple of videos, reading, and, of course, Google! Another thing to mention is that I actually wanted to do the animations in a tray slide up/down way as it was shown, but I couldn't figure out exactly how to, so I did it in a fading animation instead.
+My biggest challenge was creating the settings page for default values for the tip calculator. The instructions were not entirely clear on how to do this as the walkhrough video was. However, I was able to get it right by watching a couple of videos, reading, and, of course, Google! Another thing to mention is that I actually wanted to do the animations in a tray slide up/down way as it was shown, but I couldn't figure out exactly how to, so I did it in a fading animation instead.
 
 
 ## License
