@@ -100,7 +100,7 @@
                                 <color key="backgroundColor" red="0.18966564120000001" green="0.017826054970000001" blue="0.018119404490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="DLg-qQ-I0W" appends="YES" id="u9C-ZJ-NGs"/>
+                                    <outletCollection property="gestureRecognizers" destination="gua-Yc-a76" appends="YES" id="aaU-Zx-rjR"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -122,9 +122,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="DLg-qQ-I0W">
+                <tapGestureRecognizer id="gua-Yc-a76">
                     <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="7Iz-ZF-mbS"/>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="emL-7X-4Fq"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

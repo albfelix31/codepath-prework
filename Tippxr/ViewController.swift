@@ -42,7 +42,6 @@ class ViewController: UIViewController {
     }
 
 
-    
     @IBAction func calculateTip(_ sender: Any) {
         let bill = Double(billField.text!) ?? 0
         let tipPercentages = [0.18, 0.20, 0.25]
@@ -52,5 +51,10 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
+    
+    @IBAction func onTap(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
 }
 
