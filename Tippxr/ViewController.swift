@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var twoTab: UILabel!
+    @IBOutlet weak var threeTab: UILabel!
+    @IBOutlet weak var fourTab: UILabel!
     
     let defaults = UserDefaults.standard
 
@@ -22,6 +25,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        twoTab.text = "$0.00"
+        threeTab.text = "$0.00"
+        fourTab.text = "$0.00"
+
         self.title = "Tip Calculator"
         
         //let percentSetting = defaults.integer(forKey: "default tip")
@@ -47,9 +54,15 @@ class ViewController: UIViewController {
         let tipPercentages = [0.18, 0.20, 0.25]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
+        let twoP = total/2
+        let threeP = total/3
+        let fourP = total/4
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        twoTab.text = String(format: "$%.2f", twoP)
+        threeTab.text = String(format: "$%.2f", threeP)
+        fourTab.text = String(format: "$%.2f", fourP)
     }
     
     @IBAction func onTap(_ sender: Any) {
