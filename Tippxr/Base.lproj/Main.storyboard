@@ -133,7 +133,6 @@
         <!--Settings View Controller-->
         <scene sceneID="c9e-Jc-qyM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FU7-mG-4mA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FvH-8H-Whz" customClass="SettingsViewController" customModule="Tippxr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YmA-s4-bZ2"/>
@@ -163,6 +162,9 @@
                                             <segment title="25%"/>
                                         </segments>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="onDefaultPercentChanged:" destination="FvH-8H-Whz" eventType="valueChanged" id="qCk-DE-AOy"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.060630575759999999" green="0.080154984509999999" blue="0.29335330310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -171,7 +173,11 @@
                         <color key="backgroundColor" red="0.18966564120000001" green="0.017826054970000001" blue="0.018119404490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="gF7-cJ-Gsk"/>
+                    <connections>
+                        <outlet property="tipPercentControl" destination="Tbf-Eh-e3S" id="hEa-jI-58L"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FU7-mG-4mA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1332.5" y="140.5"/>
         </scene>
